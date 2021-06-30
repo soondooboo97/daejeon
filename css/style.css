@@ -59,7 +59,7 @@ a {
     position: relative;
     margin: 0 auto;
     width: 100%;
-/*    max-width: 1240px;*/
+    /*    max-width: 1240px;*/
     max-width: none;
     padding: 0 20px;
 }
@@ -180,6 +180,16 @@ a {
     cursor: pointer;
 }
 
+.gnb-layout:after{
+    
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #eee;
+    background: 
+}
+
+
 
 .top-wrap .gnb-layout {
     position: relative;
@@ -236,6 +246,31 @@ a {
 
 }
 
+.gnb-layout .item{
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    min-height: 300px;
+    margin: 50px 0;
+    padding-left: 275px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.gnb-layout .item .gnb-title{
+position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-right: 20px;
+    width: 255px;
+    text-align: left;
+    background-color: gray;
+}
+
 .gnb-layout ul > li > a:before {
     display: block;
     position: absolute;
@@ -253,119 +288,7 @@ a {
     content: none;
 }
 
-.gnb-layout ul > li .item {
-    display: block;
-    position: absolute;
-    top: 87px;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    min-height: 300px;
-    margin: 50px 0;
-    padding-left: 275px;
-    text-align: left;
-    background-color: red;
-}
 
-
-.gnb-layout ul > li .item .gnb-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding-right: 20px;
-    width: 255px;
-    text-align: left;
-    background-color: #ddd;
-}
-
-.gnb-layout ul > li .item .gnb-title strong {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    margin: 0 0 40px;
-    font-size: 23px;
-    color: #282828;
-    line-height: 1.3;
-    font-family: 'score-dream-extrabold';
-}
-
-.gnb-layout ul > li .item .gnb-title p {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-    color: #767676;
-    line-height: 1.4;
-}
-
-.gnb-layout ul > li .item ul {
-    float: left;
-    position: relative;
-    top: 0;
-    height: 100% !important;
-    min-height: 243px;
-    width: 100%;
-    text-align: left;
-}
-
-.gnb-layout ul > li .item ul > li {
-    display: block;
-    float: left;
-    position: relative;
-    width: calc(33.33% - 20px);
-    padding: 0;
-    margin: 0 0 30px 20px;
-    text-align: left;
-}
-
-.gnb-layout .depth1 > li .item .depth2 > li > a {
-    display: block;
-    position: relative;
-    padding: 10px 40px 10px 20px;
-    border: 1px solid #d9d9d9;
-    border-radius: 5px;
-    vertical-align: top;
-    transition: all 0.3s ease-out;
-    @-webkit-transition: all 0.3s ease-out;
-}
-.gnb-layout .depth1 > li .item .n1 > li > a {
-    display: block;
-    position: relative;
-    padding: 10px 40px 10px 20px;
-    border: 1px solid #d9d9d9;
-    border-radius: 5px;
-    vertical-align: top;
-    transition: all 0.3s ease-out;
-    @-webkit-transition: all 0.3s ease-out;
-}
-
-
-
-.gnb_layout ul > li .item .depth2> li > a span {
-    display: inline-block;
-    color: #282828;
-    font-size: 17px;
-    font-family: 'score-dream-medium';
-    vertical-align: top;
-}
-
-
-
-.gnb-layout .depth3 {
-    padding: 10px 20px 0;
-}
-
-.gnb-layout .depth2{
-    display: none;
-}
-.gnb-layout .item{
-    opacity: 0;
-    visibility: hidden;
-}
 /*--------------- section1 ---------------*/
 
 
@@ -448,7 +371,7 @@ a {
     width: 200px;
     margin: 0 auto;
     margin-top: 30px;
-    
+
 }
 
 .main-visual .cont-box span {
@@ -465,6 +388,10 @@ a {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+
+
+
 
 
 
@@ -486,7 +413,7 @@ a {
     transform-origin: left top;
 }
 
-.section .eng-title .bold-on{
+.section .eng-title .bold-on {
     font-weight: bold;
 }
 
@@ -511,14 +438,14 @@ a {
 }
 
 /*안내하는 사람 이미지*/
-.section2 .aa{
+.section2 .aa {
     width: 100px;
     height: 105px;
     background-image: url(../img/ir-main.png);
     margin: 0 auto;
     background-position: 0 0;
     position: absolute;
-    right:0;
+    right: 0;
     bottom: -12px;
 }
 
@@ -579,38 +506,38 @@ a {
     font-weight: 500;
 }
 
-.section2 .icon{
+.section2 .icon {
     width: 101px;
     height: 101px;
-    background-color:#f5f5f5;
+    background-color: #f5f5f5;
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 24px;
     z-index: 1050;
 }
 
-.section2 .icon:hover{
+.section2 .icon:hover {
     background-color: #f2ac3e;
     transition: 0.5s;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.section2 .icon1{
+.section2 .icon1 {
     background-image: url(../img/ir-main.png);
     background-position: -162px 0;
 }
 
-.section2 .icon2{
+.section2 .icon2 {
     background-image: url(../img/ir-main.png);
     background-position: -283px 0;
 }
 
-.section2 .icon3{
+.section2 .icon3 {
     background-image: url(../img/ir-main.png);
     background-position: -395px 0;
 }
 
-.section2 .icon4{
+.section2 .icon4 {
     background-image: url(../img/ir-main.png);
     background-position: -508px 0;
 }
@@ -620,13 +547,14 @@ a {
 .section3 {
     margin-top: 100px;
     position: relative;
+    padding-bottom: 100px;
 }
 
 .section3:before {
     content: '';
     background-color: #f8f8f8;
     position: absolute;
-    bottom: -100px;
+    bottom: 0px;
     left: 0;
     width: 100%;
     height: 379px;
@@ -634,109 +562,111 @@ a {
 
 
 .card-wrap {
-  width:100%;
-  display:flex;
-  justify-content:center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.card{
-  width:232px;
-  height:404px;
-/*  border:solid 1px red;*/
-  position:relative;
-  margin-right:20px;
+.card {
+    width: 232px;
+    height: 404px;
+    /*  border:solid 1px red;*/
+    position: relative;
+    margin-right: 20px;
 }
-.card:last-child{
-  margin-right:0;
+
+.card:last-child {
+    margin-right: 0;
 }
+
 .card1 .pic {
-  width:232px;
-  height:337px;
-  background-color:#999;
-  background-image: url(../img/card_img1.jpeg);
+    width: 232px;
+    height: 337px;
+    background-color: #999;
+    background-image: url(../img/card_img1.jpeg);
     background-position: center;
 }
 
 .card2 .pic {
-  width:232px;
-  height:337px;
-  background-color:#999;
-  position:absolute;
-  bottom:0;
-  background-image: url(../img/card_img2.jpeg);
+    width: 232px;
+    height: 337px;
+    background-color: #999;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/card_img2.jpeg);
     background-position: center;
 }
 
 .card3 .pic {
-  width:232px;
-  height:337px;
-  background-color:#999;
-  background-image: url(../img/card_img3.jpeg);
+    width: 232px;
+    height: 337px;
+    background-color: #999;
+    background-image: url(../img/card_img3.jpeg);
     background-position: center;
 }
 
 .card4 .pic {
-  width:232px;
-  height:337px;
-  background-color:#999;
-  position:absolute;
-  bottom:0;
-  background-image: url(../img/card_img4.jpeg);
-  background-position: center;
+    width: 232px;
+    height: 337px;
+    background-color: #999;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/card_img4.jpeg);
+    background-position: center;
 }
 
 
 
 
-.card .info{
-  width:207px;
-  height:207px;
-  position:absolute;
-  display:block;
-  text-align:center;
+.card .info {
+    width: 207px;
+    height: 207px;
+    position: absolute;
+    display: block;
+    text-align: center;
 }
 
-.card .info1{
-  bottom:0;
-  left:50%;
-  transform:translatex(-50%);
-  background-color: rgba(218,84,114,0.9);
+.card .info1 {
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: rgba(218, 84, 114, 0.9);
 }
 
-.card .info2{
-  top:0;
-  left:50%;
-  transform:translatex(-50%);
-  background-color: rgba(11,81,157,0.9);
-}
-
-
-.card .info3{
-  bottom:0;
-  left:50%;
-  transform:translatex(-50%);
-  background-color: rgba(242,129,31,0.9);
+.card .info2 {
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: rgba(11, 81, 157, 0.9);
 }
 
 
-.card .info4{
-  top:0;
-  left:50%;
-  transform:translatex(-50%);
-  background-color: rgba(77,165,80,0.9);
+.card .info3 {
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: rgba(242, 129, 31, 0.9);
+}
+
+
+.card .info4 {
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: rgba(77, 165, 80, 0.9);
 }
 
 
 
 
-.card .info strong{
-  font-weight:400;
-  font-size:21px;
-  color:#fff;
-  position:absolute;
-  left:50%;
-  transform: translateX(-50%);
-    top:25%;
+.card .info strong {
+    font-weight: 400;
+    font-size: 21px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
 }
 
 /*
@@ -744,25 +674,26 @@ div { transition: all 0.3s; }
 div:hover { transition: all 0.3s; }
 */
 
-.card .info{
- transition: all 0.3s;
+.card .info {
+    transition: all 0.3s;
 }
 
-.card :hover .info{
-  width:232px;
-  height:404px;
-  transition:all 0.3s;
+.card :hover .info {
+    width: 232px;
+    height: 404px;
+    transition: all 0.3s;
 }
 
 
-.card .pic{
-     transition: all 0.3s;
+.card .pic {
+    transition: all 0.3s;
 }
-.card:hover .pic{
-  width:232px;
-  height:404px;
-  transition:all 0.3s;
-} 
+
+.card:hover .pic {
+    width: 232px;
+    height: 404px;
+    transition: all 0.3s;
+}
 
 .section .card-wrap .info em {
     margin: 10px auto;
@@ -810,105 +741,253 @@ div:hover { transition: all 0.3s; }
 /*--------------- section4 ---------------*/
 
 .section4 {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
 }
 
-/*
-.section4{
-    position: absolute;
-    top: 0;
-    left: -100px;
-    width: 508px;
-    height: 465px;
-    background: url(../img/%ED%9D%90%EB%A6%B0%EB%B0%B0%EA%B2%BD.png) no-repeat left center;
-}
-*/
-
-.section4 .layout {
-
-    padding-top: 30px;
-    z-index: 2;
-    position: relative;
-    margin: 0 auto;
+.section4 > .layout {
     width: 100%;
-    max-width: 1240px;
+    /* background-color: red;*/
+    padding-top: 0;
+    position: relative;
+    padding-top: 20px;
+}
 
+.section4 > .layout .grid1 {
+    max-width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    /*    background-color: #ddd; */
+}
+
+.section4 > .layout .grid1 > .title {
+    margin: 0;
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 5px;
 }
 
 
-.section4 .title {
+.section4 > .layout .grid1 .text {
+
     text-align: left;
-    margin-top:100px;
+}
+
+.section4 .layout .grid1 .link em {
+    font-size: 24px;
+    /*    position: absolute;*/
+    font-style: normal;
+    font-weight: bold;
+    color: #494949;
+    /*
+    top: 32px;
+    left: 14px;
+*/
+}
+
+.section4 .layout .grid1 .link a {
+    display: flex;
+    align-items: flex-end;
+    padding: 23px 0px;
+
+
+}
+
+.section4 .layout .grid1 .link span {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-left: 20px;
+    line-height: 20px;
+    color: #494949;
+}
+
+.section4 .grid-img {
+    width: 508px;
+    height: 68%;
+    position: absolute;
+    background-image: url(/img/section4__background.png);
+    background-size: cover;
+    left: -100px;
+    top: -30px;
+}
+
+.clear:after,
+.layout:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    content: "";
+}
+
+
+
+/*-------------------grid3--------------------*/
+
+
+.section4 .grid.grid3 {
+    position: absolute;
+    right: 300px;
+    top: 0;
+    width: 742px;
+    min-width: 300px;
+    height: 540px;
+    padding: 20px;
+    padding-bottom: 99px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(1, 2, 2, 0.2);
+    z-index: 99;
+}
+
+.section4 .grid.grid3 .title {
+    text-align: left;
+    min-height: 70px;
+    position: relative;
+}
+
+.section4 .grid.grid3 .title strong {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.section4 .grid.grid3 .title .text {
+    display: inline-block;
+    text-align: left;
+    font-size: 24px;
+    padding: 32px 0;
+    line-height: 1;
+}
+
+#images-block {
+    position: relative;
+    width: 100%;
+    height: 530px;
+}
+
+#images-block .view {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#images-block .view.view-before {
+    z-index: 100;
+}
+
+#images-block .view.view-after {
+    z-index: 200;
+    height: 100%;
+}
+
+#dragme {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 300;
+}
+
+#dragme .handle {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    display: block;
+    margin-left: 240px;
+    margin-top: 180px;
+    background: url(https://www.djjunggu.go.kr/images/tour/main/ir-main.png) no-repeat -130px -111px;
+}
+
+#images-block .view img {
+    height: 100%;
+    max-width: none;
+}
+
+
+/*-------------------grid2--------------------*/
+   
+.section4 .grid.grid2{
+    width: 100%;
+    display: block;
+}
+
+.section4 .grid2 .text-slider-wrap{
+    position: absolute;
+    left: 15%;
+}
+
+.section4 .grid.grid2 .main-photo-skin{
+    position: relative;
+    width: 100%;
+    height: 322px;
+    /* overflow: hidden; */
+    padding-top: 95px;
+    padding-left: 79px;
+        z-index: 10;
+}
+
+.section4 .grid.grid2 .main-photo-skin:before{
+    content: '';
+    position: absolute;
+    top: 86px;
+    left: 150px;
+    width: 98px;
+    height: 104px;
+    background-image: url(../img/ir-main.png);
+    background-position: 0 -100px;
+}
+
+
+.section4 .layout .title {
+    margin: 0;
+    text-align: center;
+}
+
+.section4 .grid2 .title strong{
+    color :#fff;
+}
+
+.section4 .text-slider-item .subject {
+    display: block;
+    font-size: 24px;
+    /*    color: #fff;*/
     margin-bottom: 10px;
 }
 
-.section4 .title strong {
-    display: inline-block;
-    color: #333;
-    font-family: 'score-dream-medium';
-    font-size: 30px;
-    text-align: center;
-    position: relative;
+.section4 .text-slider-item strong{
+    color: #fff;
 }
 
-/*
-.section4 .grid.grid1 .group-link .link a {
+.section4 .text-slider-item .text {
     display: block;
-    padding: 23px 29px;
-    padding-left: 83px;
-    position: relative;
-    border: 3px solid transparent;
-    transition: all 0.3s;
-    width: 100%;
-}
-*/
-
-
-/*
-.section4 .title em {
-    padding: 0 5px;
-    display: inline-block;
-    font-size: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: -1px;
     font-style: normal;
+    color: #fff;
 }
 
-
-.section4  .text {
-    display: block;
-    color: #333;
-    font-family: 'score-dream-medium';
-    font-size: 17px;
-}
-
-
-.section4 .grid.grid1 {
+.section4:after{
+    content: '';
+    background-color: #162439;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    display: block;
-        background-image: url(../img/ir-main.png);
-    background-position: left center;
-    background-repeat: no-repeat;
+    height: 420px;
+    visibility: visible;
 
 }
 
-.section4 .grid.grid1 .group-link {
-    padding-bottom: 40px;
+.section4 .slick-prev{
+    left:207
 }
-
-.section4 .grid.grid1 .group-link .link {
-    display: block;
-    padding: 23px 29px;
-    padding-left: 83px;
-    position: relative;
-    border: 3px solid transparent;
-    transition: all 0.3s;
-    width: 100%;
-}
-
-.section4 .grid.grid1 .group-link .link span:first-child{
-    font-size: 30px;
-
-}
-*/
 
 
 
@@ -927,17 +1006,17 @@ div:hover { transition: all 0.3s; }
 
 
 
-.footer-wrap{
+.footer-wrap {
     background-color: #162439;
-/*    height: 172px;*/
+    /*    height: 172px;*/
     margin-top: -30px;
     padding-top: 30px;
-     border-top: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.footer-wrap .info{
+.footer-wrap .info {
     padding: 60px 0;
-    
+
 }
 
 .footer-wrap .layout {
@@ -953,7 +1032,7 @@ div:hover { transition: all 0.3s; }
 .footer-wrap .footer-logo {
     position: absolute;
     left: 0;
-    top:-15px;
+    top: -15px;
     width: 102px;
     height: 67px;
     background-image: url(../img/footerlogo.png);
@@ -968,7 +1047,7 @@ div:hover { transition: all 0.3s; }
     font-style: normal;
 }
 
-.footer-wrap .copy  p {
+.footer-wrap .copy p {
     margin: 3px 0 0;
     color: #8f9096;
     font-size: 15px;

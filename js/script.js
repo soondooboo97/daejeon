@@ -7,6 +7,16 @@ $(document).ready(function () {
         dots: true,
     });
     
+    
+      $('.section4 > .layout .text-slider-wrap').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+          fade : true,
+          arrows:false,
+    });
+    
 
     
     
